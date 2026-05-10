@@ -656,7 +656,6 @@
       let isMoving = false;
 
       setInterval(() => {
-        // 만약 슬라이더가 숨겨져 있는 상태(너비가 0)라면 실행하지 않음
         const parentWidth = slider.parentElement.clientWidth;
         if (parentWidth === 0 || isMoving) return;
 
@@ -664,7 +663,6 @@
         isMoving = true;
 
         slider.style.transition = "transform 0.6s ease-in-out";
-        // 이동 직전에 계산한 부모 너비를 사용
         slider.style.transform = `translateX(-${currentIndex * parentWidth}px)`;
 
         setTimeout(() => {
@@ -678,7 +676,6 @@
       }, 4000);
     }
 
-    // 페이지 로드 시 실행
     createAutoSlider('pets-slider');
     createAutoSlider('camel-slider');
   })();
