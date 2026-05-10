@@ -267,6 +267,23 @@ p { margin-bottom: 16px; }
   font-style: italic;
   color: var(--color-text-soft);
 }
+.col-image {
+  overflow: hidden;
+  position: relative;
+  border-radius: var(--radius-lg); 
+}
+
+.two-col-slider{
+  display: flex;
+}
+
+.col-image img {
+  width: 100%;
+  flex-shrink: 0;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 0;
+}
 
 /* ---------- Why (cards) ---------- */
 .section-why { background: var(--color-cream); }
