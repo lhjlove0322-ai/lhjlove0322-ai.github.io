@@ -96,11 +96,11 @@
     "subheadline": "Same patented formula. Different sizes, optimized for different lives.",
     "items": [
       {
-        "id": "pet-100ml (3.4 oz)",
-        "size": "100ml (3.4 oz)",
+        "id": "pet-100ml(3.4 oz)",
+        "size": "100ml(3.4 oz)",
         "audience": "Companion Pets",
         "tagline": "For dogs, cats, and the small mammals you love.",
-        "body": "Designed for the everyday: daily oral care for dogs and cats of all breeds and ages. The 100ml (3.4 oz) bottle delivers approximately 2-3 months of daily use for one small or medium pet. Spray directly onto teeth and gums, or add 5-10 sprays per 100ml (3.4 oz) of drinking water for stress-free prevention.",
+        "body": "Designed for the everyday: daily oral care for dogs and cats of all breeds and ages. The 100ml(3.4 oz) bottle delivers approximately 2-3 months of daily use for one small or medium pet. Spray directly onto teeth and gums, or add 5-10 sprays per 100ml(3.4 oz) of drinking water for stress-free prevention.",
         "bestFor": [
           "Dogs and cats with bad breath, plaque, or early gum inflammation",
           "Senior pets that can no longer tolerate brushing",
@@ -114,7 +114,7 @@
           "Safe to swallow — no rinsing needed"
         ],
         "image": {
-          "src": "/assets/product-100ml (3.4 oz).jpg",
+          "src": "/assets/product-100ml(3.4 oz).jpg",
           "alt": "Chika Chika Cool 100ml (3.4 oz) bottle for companion pets",
           "spec": "Reuse green/red label bottle pair from existing pet catalog"
         },
@@ -122,8 +122,8 @@
         "buyLabel": "Buy on Naver Smart Store"
       },
       {
-        "id": "perf-990.7ml (33.5oz)",
-        "size": "990.7ml (33.5oz)",
+        "id": "perf-990.7ml(33.5oz)",
+        "size": "990.7ml(33.5oz)",
         "audience": "Performance Animals",
         "tagline": "Engineered for racing camels, thoroughbred horses, and high-value working animals.",
         "body": "The 990.7ml (33.5oz) bottle is built for stables, racing operations, and large-animal facilities. Same patented formula as the 100ml (3.4 oz) — same seven herbs, same low-temperature extraction process — sized for daily addition to drinking water across multiple animals or for direct oral application during routine handling.",

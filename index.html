@@ -44,7 +44,11 @@
           </div>
         </div>
         <div class="hero-image">
-          <img src="assets/hero-split.jpg" alt="A companion dog and a racing camel — the dual market for Chika Chika Cool" />
+          <div class="slider" id="slider">
+            <img src="assets/header-animation/1.png"  alt="A companion dog and a racing camel — the dual market for Chika Chika Cool">
+            <img src="assets/header-animation/2.png"  alt="A companion dog and a racing camel — the dual market for Chika Chika Cool">
+            <img src="assets/header-animation/3.png"  alt="A companion dog and a racing camel — the dual market for Chika Chika Cool">
+          </div>
         </div>
       </div>
       <div class="trust-strip">
@@ -148,13 +152,13 @@
 
           <article class="product-card">
             <div class="product-image">
-              <img src="assets/product-.jpg" alt="Chika Chika Cool  bottle for performance animals" />
+              <img src="assets/product-990.7ml(33.5oz).jpg" alt="Chika Chika Cool 990.7ml (33.5oz) bottle for performance animals" />
             </div>
             <div class="product-body">
-              <span class="product-tag"></span>
+              <span class="product-tag">990.7ml (33.5oz)</span>
               <h3>Performance Animals</h3>
               <p class="product-tagline">Engineered for racing camels, thoroughbred horses, and high-value working animals.</p>
-              <p>The  bottle is built for stables, racing operations, and large-animal facilities. Same patented formula as the 100ml (3.4 oz) — same seven herbs, same low-temperature extraction process — sized for daily addition to drinking water across multiple animals or for direct oral application during routine handling.</p>
+              <p>The 990.7ml (33.5oz) bottle is built for stables, racing operations, and large-animal facilities. Same patented formula as the 100ml (3.4 oz) — same seven herbs, same low-temperature extraction process — sized for daily addition to drinking water across multiple animals or for direct oral application during routine handling.</p>
               <h4>Best for</h4>
               <ul>
                 <li>Racing and endurance camels</li>
@@ -470,7 +474,7 @@
           <details class="faq-item"><summary>How long until I see results?</summary><p>Most pet owners report visibly fresher breath within 3-7 days of daily use. Reduction in plaque and gum inflammation typically becomes visible within 2-3 weeks. For performance animals, the analgesic effect on bit-related discomfort is often immediate.</p></details>
           <details class="faq-item"><summary>Will this affect a racing animal's pre-race screening?</summary><p>No. Chika Chika Cool contains no banned substances. All seven herbal ingredients and the grapefruit seed extract preservative are confirmed as zero-doping. The product is safe for daily use through training and competition.</p></details>
           <details class="faq-item"><summary>What's the difference between the 100ml (3.4 oz) and 990.7ml (33.5oz) bottles?</summary><p>Same formula, different sizes. The 100ml (3.4 oz) is sized for one or two companion pets and lasts approximately 2-3 months of daily use. The 990.7ml (33.5oz) is sized for stable and racing operations and is designed to be added to large drinking troughs across multiple animals.</p></details>
-          <details class="faq-item"><summary>How do I get my dog or cat to accept the spray?</summary><p>Start by mixing 5-10 sprays into 990.7ml (33.5oz) of drinking water for the first 1-2 weeks. Once they're used to the herbal taste, transition gradually to direct application. Some pets never fully accept direct spraying — and that's fine. Continued use through drinking water delivers the same benefits.</p></details>
+          <details class="faq-item"><summary>How do I get my dog or cat to accept the spray?</summary><p>Start by mixing 5-10 sprays into 100ml (3.4 oz) of drinking water for the first 1-2 weeks. Once they're used to the herbal taste, transition gradually to direct application. Some pets never fully accept direct spraying — and that's fine. Continued use through drinking water delivers the same benefits.</p></details>
           <details class="faq-item"><summary>Can puppies, kittens, or pregnant animals use it?</summary><p>Yes, the formula is gentle enough for animals of all life stages. As with any new product, we recommend introducing it gradually and consulting your veterinarian if your animal has specific health conditions.</p></details>
           <details class="faq-item"><summary>Is it safe for cats specifically?</summary><p>Yes. Many natural pet products contain ingredients (like xylitol, certain essential oils, or alcohol) that are toxic to cats. Chika Chika Cool contains none of these. The herbal formula is safe for feline use.</p></details>
           <details class="faq-item"><summary>How is the product shipped internationally?</summary><p>We ship globally for both retail and bulk B2B orders. International orders are typically processed within 3-5 business days from our Seoul facility. Contact us for shipping costs to your region and for distributor pricing.</p></details>
@@ -585,6 +589,46 @@
           });
         });
       });
+    })();
+
+    // slider 부분 slider
+    (function() {
+      const slider = document.getElementById('slider');
+      const slides = slider.querySelectorAll('img');
+      if (slides.length === 0) return;
+
+      // 1. 첫 번째 이미지를 복사해서 맨 뒤에 추가 (눈속임용)
+      const firstClone = slides[0].cloneNode(true);
+      slider.appendChild(firstClone);
+
+      const totalSlidesWithClone = slider.querySelectorAll('img').length;
+      let count = 0;
+      let isTransitioning = false;
+
+      setInterval(() => {
+        if (isTransitioning) return;
+        
+        count++;
+        const slideWidth = slider.clientWidth;
+        
+        // 부드럽게 이동 시작
+        slider.style.transition = "transform 0.5s ease-in-out";
+        slider.style.transform = `translateX(-${count * slideWidth}px)`;
+        
+        isTransitioning = true;
+
+        // 이동 애니메이션이 끝난 후
+        setTimeout(() => {
+          // 마지막 복사본 이미지에 도달했을 때
+          if (count >= totalSlidesWithClone - 1) {
+            // 애니메이션을 끄고 순식간에 진짜 1번으로 워프
+            slider.style.transition = "none";
+            count = 0;
+            slider.style.transform = `translateX(0px)`;
+          }
+          isTransitioning = false;
+        }, 500); // transition 시간(0.5s)과 동일하게 설정
+      }, 3000);
     })();
   </script>
 </body>

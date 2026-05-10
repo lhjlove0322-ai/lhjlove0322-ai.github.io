@@ -100,7 +100,7 @@ The site has **13 sections** in this order. Each has a corresponding key in `con
 | 1 | Hero | `hero` | `#hero` | Headline + subheadline + 2 CTAs + trust strip |
 | 2 | Brand heritage | `heritage` | `#heritage` | Story of the human-patent origin |
 | 3 | Why Chika Chika Cool | `why` | `#why` | 4 differentiator cards |
-| 4 | Product lineup | `products` | `#products` | 990.7ml (33.5oz) + 990.7ml (33.5oz), side-by-side |
+| 4 | Product lineup | `products` | `#products` | 100ml (3.4 oz) + 990.7ml (33.5oz), side-by-side |
 | 5 | Seven herbs | `ingredients` | `#ingredients` | 7-card herb grid |
 | 6 | The science | `science` | `#science` | 12-hr extraction + 3-step process |
 | 7 | Care performance | `performance` | `#performance` | Radar chart (5 axes) — *not in reference HTML, see below* |
@@ -132,8 +132,8 @@ All images go in `/assets/`. Filenames in `content.json` reference these paths. 
 | `hero-split.jpg` | Hero | Composite the dog photo + camel photo from your two catalogs | 1600×900, JPG ≤200KB |
 | `og-image.jpg` | Meta | Same composite, tighter crop | 1200×630, JPG |
 | `heritage-extraction.jpg` | Heritage | Extraction shot, herb still life, or warm lab photo | 1200×800, JPG |
-| `product-990.7ml (33.5oz).jpg` | Products | Green/red label bottle pair from pet catalog page 1 | 1200×900, JPG |
-| `product-990.7ml (33.5oz).jpg` | Products | 990.7ml (33.5oz) bottle lineup from large-animal catalog page 1 | 1200×900, JPG |
+| `product-100ml(3.4 oz).jpg` | Products | Green/red label bottle pair from pet catalog page 1 | 1200×900, JPG |
+| `product-990.7ml(33.5oz).jpg` | Products | 990.7ml (33.5oz) bottle lineup from large-animal catalog page 1 | 1200×900, JPG |
 | `herb-clove.jpg` | Ingredients | From pet catalog page 2 (the styled herb-on-wood photos) | 800×800, JPG |
 | `herb-licorice.jpg` | Ingredients | From pet catalog page 2 | 800×800, JPG |
 | `herb-elm.jpg` | Ingredients | New — slippery elm bark (or substitute herb image) | 800×800, JPG |
