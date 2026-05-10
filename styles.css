@@ -612,8 +612,15 @@ p { margin-bottom: 16px; }
   overflow: hidden;
   margin-bottom: 20px;
   background: var(--color-cream-warm);
+  display: flex;
 }
-.howto-image img { width: 100%; height: 100%; object-fit: cover; }
+.howto-image img { 
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+  display: block;
+  object-position: center;
+}
 .howto-num {
   font-family: var(--font-serif);
   font-size: 1.4rem;
