@@ -704,6 +704,7 @@ p { margin-bottom: 16px; }
   gap: 16px;
   font-size: 0.95rem;
 }
+/*링크드인 주소 설정 부분*/
 .contact-card.contact-b2b .contact-list li { border-bottom-color: rgba(255,255,255,0.12); }
 .contact-list li > span { color: var(--color-text-muted); font-size: 0.85rem; }
 .contact-card.contact-b2b .contact-list li > span { color: var(--color-cream); opacity: 0.7; }
