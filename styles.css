@@ -267,17 +267,17 @@ p { margin-bottom: 16px; }
   font-style: italic;
   color: var(--color-text-soft);
 }
-/* .col-image {
+.col-image {
   overflow: hidden;
   position: relative;
   border-radius: var(--radius-lg); 
-} */
+}
 
 .two-col-slider{
   display: flex;
 }
 
-.section-heritage .col-image img {
+.section-heritage .col-image1 img {
   width: 100%;
   height: auto;
   aspect-ratio: 1 / 1;
@@ -285,7 +285,7 @@ p { margin-bottom: 16px; }
   border-radius: var(--radius-lg);
 }
 
-.section-heritage .col-image {
+.section-heritage .col-image1 {
   display: flex;
   align-items: center;
   justify-content: center;
