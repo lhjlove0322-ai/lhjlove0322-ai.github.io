@@ -684,31 +684,31 @@
     createAutoSlider('camel-slider');
   })();
 
-  // Send inquiry 부분
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbyQhYCTBEbh8M94F_2PLy9p6GtfKsO64IRCODrqGCmyqdTlLpBmdn62HWy52IIWX3XFdQ/exec';
-  const form = document.getElementById('my-google-form');
+  // // Send inquiry 부분
+  // const scriptURL = '';
+  // const form = document.getElementById('my-google-form');
 
-  form.addEventListener('submit', e => {
-    e.preventDefault();
+  // form.addEventListener('submit', e => {
+  //   e.preventDefault();
     
-    // 버튼 로딩 상태 표시
-    const submitButton = form.querySelector('button');
-    submitButton.disabled = true;
-    submitButton.innerText = 'Sending...';
+  //   // 버튼 로딩 상태 표시
+  //   const submitButton = form.querySelector('button');
+  //   submitButton.disabled = true;
+  //   submitButton.innerText = 'Sending...';
 
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {
-        alert('Success! Your inquiry has been submitted successfully. Thank you!');
-        form.reset();
-      })
-      .catch(error => {
-        alert('Error!', error.message);
-      })
-      .finally(() => {
-        submitButton.disabled = false;
-        submitButton.innerText = 'Send inquiry';
-      });
-  });
+  //   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+  //     .then(response => {
+  //       alert('Success! Your inquiry has been submitted successfully. Thank you!');
+  //       form.reset();
+  //     })
+  //     .catch(error => {
+  //       alert('Error!', error.message);
+  //     })
+  //     .finally(() => {
+  //       submitButton.disabled = false;
+  //       submitButton.innerText = 'Send inquiry';
+  //     });
+  // });
   </script>
 </body>
 </html>
